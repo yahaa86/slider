@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Слайдер с фото</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <h1>Слайдер с фото</h1>
+    <div class="slider">
+     	<div class="slider__container">
+     		<img class="slider__image fade"
+     		src="./img/html.png" alt="slide picture">
+     	</div>
+     	<div class="slider__controls">
+     		<div class="slider__dots">
+     			<span class="slider__dot active" onclick="changeIndex (0)"></span>
+     			<span class="slider__dot" onclick="changeIndex (1)"></span>
+     			<span class="slider__dot" onclick="changeIndex (2)"></span>
+     		</div>
+     		      <button class= "slider__nav 
+     		      slider__nav-left" onclick="slide (-1)">&lt; </button>
+     		      <button class="slider__nav
+     		      slider__nav-right" onclick="slide (1)">&gt;</button>
+     	</div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
